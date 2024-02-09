@@ -1,0 +1,46 @@
+.menuList {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.text {
+  max-width: 270px;
+  text-wrap: wrap;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: none;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
+.iconBox {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}

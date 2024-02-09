@@ -1,0 +1,9 @@
+.BgImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: url('../../images/hero-webstudio.jpg') center / cover no-repeat,
+    url('../../images/overaly-webstudio.jpg') center / cover no-repeat;
+}

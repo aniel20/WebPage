@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { Switch } from '@mui/material';
 import Header from './Navbar/Navbar';
-import css from '../components/App.module.css';
+import { Hero } from './Hero/Hero';
+import { Features } from './Features/Features';
 
 export default function App() {
-  const [toggleDarkMode, setToggleDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(true);
 
-  const toggleDarkTheme = () => {
-    setToggleDarkMode(!toggleDarkMode);
+  const toggleDarkMode = () => {
+    setDarkMode(prevMode => !prevMode); // Toggle the current mode
   };
 
-  const darkTheme = createTheme({
+  const theme = createTheme({
     palette: {
-      mode: toggleDarkMode ? 'dark' : 'light',
+      mode: darkMode ? 'dark' : 'light',
       primary: {
         main: '#90caf9',
       },
@@ -25,12 +25,11 @@ export default function App() {
   });
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Header />
-      <div className={css.swichPosition}>
-        <Switch checked={toggleDarkMode} onChange={toggleDarkTheme} />
-      </div>
+      <Header toggleDarkMode={toggleDarkMode} />
+      <Hero />
+      <Features />
     </ThemeProvider>
   );
 }

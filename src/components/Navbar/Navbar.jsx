@@ -1,8 +1,9 @@
 import React from 'react';
 import css from './Navbar.module.css';
-import { Box, MenuItem, MenuList, Typography, Link } from '@mui/material';
+import { Box, MenuItem, MenuList, /* Typography, */ Link } from '@mui/material';
+import ThemeSwitch from '../ThemeSwich';
 
-const Header = () => {
+const Header = ({ toggleDarkMode }) => {
   return (
     <Box
       sx={{
@@ -23,20 +24,75 @@ const Header = () => {
           flexDirection: 'row',
           gap: '20px',
           bgcolor: 'background.default',
-          color: 'text.primary',
         }}
       >
-        <MenuItem>
-          <Typography className={css.menuItem}>Studio</Typography>
+        <MenuItem sx={{ padding: '0px' }} className={css.menuItem}>
+          <Link
+            to="/"
+            sx={{
+              textDecoration: 'none',
+              color: 'text.primary',
+              padding: '2vh',
+              '&:hover': {
+                color: '#2196F3',
+              },
+              '&:focus-visible': {
+                borderBottom: '3px solid #2196F3',
+              },
+              '&:active': {
+                borderBottom: '3px solid #2196F3',
+              },
+            }}
+          >
+            Studio
+          </Link>
         </MenuItem>
-        <MenuItem>
-          <Typography className={css.menuItem}>Portofolio</Typography>
+        <MenuItem sx={{ padding: '0px' }} className={css.menuItem}>
+          <Link
+            to="/"
+            sx={{
+              textDecoration: 'none',
+              color: 'text.primary',
+              padding: '16px',
+              '&:hover': {
+                color: '#2196F3',
+              },
+              '&:focus-visible': {
+                borderBottom: '3px solid #2196F3',
+              },
+              '&:active': {
+                borderBottom: '3px solid #2196F3',
+              },
+            }}
+          >
+            Portofolio
+          </Link>
         </MenuItem>
-        <MenuItem>
-          <Typography className={css.menuItem}>Contacts</Typography>
+        <MenuItem sx={{ padding: '0px' }} className={css.menuItem}>
+          <Link
+            to="/"
+            sx={{
+              textDecoration: 'none',
+              color: 'text.primary',
+              padding: '16px',
+              '&:hover': {
+                color: '#2196F3',
+              },
+              '&:focus-visible': {
+                borderBottom: '3px solid #2196F3',
+              },
+              '&:active': {
+                borderBottom: '3px solid #2196F3',
+              },
+            }}
+          >
+            Contacts
+          </Link>
         </MenuItem>
       </MenuList>
-
+      <div>
+        <ThemeSwitch onToggle={toggleDarkMode} />
+      </div>
       <MenuList
         sx={{
           display: 'flex',
@@ -46,13 +102,35 @@ const Header = () => {
           color: 'text.primary',
         }}
       >
-        <MenuItem>
-          <Link className={css.menuItem} sx={{ textDecoration: 'none' }}>
+        <MenuItem sx={{ padding: '0px' }} className={css.menuItem}>
+          <Link
+            to="/"
+            sx={{
+              textDecoration: 'none',
+              color: 'text.primary',
+              padding: '0',
+              '&:hover': {
+                color: '#2196F3',
+              },
+            }}
+          >
             info@devstudio.com
           </Link>
         </MenuItem>
-        <MenuItem>
-          <Link sx={{ textDecoration: 'none' }}>+1 212-772-4150</Link>
+        <MenuItem sx={{ padding: '0px' }} className={css.menuItem}>
+          <Link
+            to="/"
+            sx={{
+              padding: '0',
+              textDecoration: 'none',
+              color: 'text.primary',
+              '&:hover': {
+                color: '#2196F3',
+              },
+            }}
+          >
+            +1 212-772-4150
+          </Link>
         </MenuItem>
       </MenuList>
     </Box>
