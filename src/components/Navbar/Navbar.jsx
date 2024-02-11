@@ -32,7 +32,7 @@ const Header = ({ toggleDarkMode }) => {
             sx={{
               textDecoration: 'none',
               color: 'text.primary',
-              padding: '2vh',
+              padding: '16px',
               '&:hover': {
                 color: '#2196F3',
               },
