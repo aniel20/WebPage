@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/WebPage/static/css/main.a195547d.css",
-    "main.js": "/WebPage/static/js/main.2e7ae39d.js",
+    "main.css": "/WebPage/static/css/main.a6669c55.css",
+    "main.js": "/WebPage/static/js/main.9cae940d.js",
     "static/media/hero-webstudio.jpg": "/WebPage/static/media/hero-webstudio.8c96a354094645f1bc15.jpg",
+    "static/media/img1.jpg": "/WebPage/static/media/img1.ef28cee3f2898b5b27f7.jpg",
+    "static/media/img2.jpg": "/WebPage/static/media/img2.d73e619dd1a867784955.jpg",
+    "static/media/img3.jpg": "/WebPage/static/media/img3.a6af5bb394859ef3f6df.jpg",
     "static/media/sprite.svg": "/WebPage/static/media/sprite.43f98dcf62609498937e03771a31712c.svg",
     "static/media/overaly-webstudio.jpg": "/WebPage/static/media/overaly-webstudio.028d78310e84865491b1.jpg",
     "index.html": "/WebPage/index.html",
-    "main.a195547d.css.map": "/WebPage/static/css/main.a195547d.css.map",
-    "main.2e7ae39d.js.map": "/WebPage/static/js/main.2e7ae39d.js.map"
+    "main.a6669c55.css.map": "/WebPage/static/css/main.a6669c55.css.map",
+    "main.9cae940d.js.map": "/WebPage/static/js/main.9cae940d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a195547d.css",
-    "static/js/main.2e7ae39d.js"
+    "static/css/main.a6669c55.css",
+    "static/js/main.9cae940d.js"
   ]
 }
