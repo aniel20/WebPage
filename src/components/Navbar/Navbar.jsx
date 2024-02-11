@@ -32,7 +32,7 @@ const Header = ({ toggleDarkMode }) => {
             sx={{
               textDecoration: 'none',
               color: 'text.primary',
-              padding: '16px',
+              padding: '2.5vh',
               '&:hover': {
                 color: '#2196F3',
               },
@@ -55,7 +55,7 @@ const Header = ({ toggleDarkMode }) => {
             sx={{
               textDecoration: 'none',
               color: 'text.primary',
-              padding: '16px',
+              padding: '2.5vh',
               '&:hover': {
                 color: '#2196F3',
               },
@@ -78,7 +78,7 @@ const Header = ({ toggleDarkMode }) => {
             sx={{
               textDecoration: 'none',
               color: 'text.primary',
-              padding: '16px',
+              padding: '2.5vh',
               '&:hover': {
                 color: '#2196F3',
               },
