@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './Navbar.module.css';
-import { Box, MenuItem, MenuList, /* Typography, */ Link } from '@mui/material';
+import { Box, MenuItem, MenuList, Link } from '@mui/material';
 import ThemeSwitch from '../ThemeSwich';
 
 const Header = ({ toggleDarkMode }) => {

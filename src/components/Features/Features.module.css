@@ -1,15 +1,16 @@
 .menuList {
   display: flex;
   flex-direction: row;
+  gap: 40px;
 }
 
 .menuItem {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .title {
+  margin: 30px 0 0 0;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
@@ -19,6 +20,7 @@
 }
 
 .text {
+  margin: 10px 0 0 0;
   max-width: 270px;
   text-wrap: wrap;
   font-family: Roboto;

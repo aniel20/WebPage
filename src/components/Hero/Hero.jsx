@@ -10,7 +10,7 @@ export const Hero = () => {
         className={css.BgImg}
         padding="0"
         sx={{
-          height: '75vh',
+          height: '80vh',
         }}
       >
         <Typography

@@ -34,7 +34,10 @@ export const Features = () => {
         }}
       >
         <MenuList className={css.menuList}>
-          <MenuItem className={css.menuItem}>
+          <MenuItem
+            className={css.menuItem}
+            sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
+          >
             <Box className={css.iconBox} sx={cardBox}>
               <svg className={css.icon} aria-hidden="true">
                 <use href={`${sprite}${cardIcon}`} />
@@ -48,7 +51,10 @@ export const Features = () => {
               develop a customized solution..
             </p>
           </MenuItem>
-          <MenuItem className={css.menuItem}>
+          <MenuItem
+            className={css.menuItem}
+            sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
+          >
             <Box className={css.iconBox} sx={cardBox}>
               <svg className={css.icon} aria-hidden="true">
                 <use href={`${sprite}${clockIcon}`} />
@@ -60,7 +66,10 @@ export const Features = () => {
               the company: respect your time and deadlines.
             </p>
           </MenuItem>
-          <MenuItem className={css.menuItem}>
+          <MenuItem
+            className={css.menuItem}
+            sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
+          >
             <Box className={css.iconBox} sx={cardBox}>
               <svg className={css.icon} aria-hidden="true">
                 <use href={`${sprite}${diagramIcon}`} />
@@ -72,7 +81,10 @@ export const Features = () => {
               solution development and implementation.
             </p>
           </MenuItem>
-          <MenuItem className={css.menuItem}>
+          <MenuItem
+            className={css.menuItem}
+            sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
+          >
             <Box className={css.iconBox} sx={cardBox}>
               <svg className={css.icon} aria-hidden="true">
                 <use href={`${sprite}${astronautIcon}`} />
