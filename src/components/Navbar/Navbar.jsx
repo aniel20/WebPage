@@ -37,10 +37,12 @@ const Header = ({ toggleDarkMode }) => {
                 color: '#2196F3',
               },
               '&:focus-visible': {
-                borderBottom: '3px solid #2196F3',
+                borderBottom: '5px solid #2196F3',
+                borderRadius: '3px',
               },
               '&:active': {
-                borderBottom: '3px solid #2196F3',
+                borderBottom: '5px solid #2196F3',
+                borderRadius: '3px',
               },
             }}
           >
@@ -58,10 +60,12 @@ const Header = ({ toggleDarkMode }) => {
                 color: '#2196F3',
               },
               '&:focus-visible': {
-                borderBottom: '3px solid #2196F3',
+                borderBottom: '5px solid #2196F3',
+                borderRadius: '3px',
               },
               '&:active': {
-                borderBottom: '3px solid #2196F3',
+                borderBottom: '5px solid #2196F3',
+                borderRadius: '3px',
               },
             }}
           >
@@ -79,10 +83,12 @@ const Header = ({ toggleDarkMode }) => {
                 color: '#2196F3',
               },
               '&:focus-visible': {
-                borderBottom: '3px solid #2196F3',
+                borderBottom: '5px solid #2196F3',
+                borderRadius: '3px',
               },
               '&:active': {
-                borderBottom: '3px solid #2196F3',
+                borderBottom: '5px solid #2196F3',
+                borderRadius: '3px',
               },
             }}
           >
