@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WebPage/static/css/main.41f1a932.css",
-    "main.js": "/WebPage/static/js/main.36881c27.js",
+    "main.css": "/WebPage/static/css/main.1c0dacac.css",
+    "main.js": "/WebPage/static/js/main.a424440f.js",
     "static/media/hero-webstudio.jpg": "/WebPage/static/media/hero-webstudio.8c96a354094645f1bc15.jpg",
     "static/media/img1.jpg": "/WebPage/static/media/img1.ef28cee3f2898b5b27f7.jpg",
     "static/media/img2.jpg": "/WebPage/static/media/img2.d73e619dd1a867784955.jpg",
@@ -9,11 +9,11 @@
     "static/media/sprite.svg": "/WebPage/static/media/sprite.43f98dcf62609498937e03771a31712c.svg",
     "static/media/overaly-webstudio.jpg": "/WebPage/static/media/overaly-webstudio.028d78310e84865491b1.jpg",
     "index.html": "/WebPage/index.html",
-    "main.41f1a932.css.map": "/WebPage/static/css/main.41f1a932.css.map",
-    "main.36881c27.js.map": "/WebPage/static/js/main.36881c27.js.map"
+    "main.1c0dacac.css.map": "/WebPage/static/css/main.1c0dacac.css.map",
+    "main.a424440f.js.map": "/WebPage/static/js/main.a424440f.js.map"
   },
   "entrypoints": [
-    "static/css/main.41f1a932.css",
-    "static/js/main.36881c27.js"
+    "static/css/main.1c0dacac.css",
+    "static/js/main.a424440f.js"
   ]
 }
