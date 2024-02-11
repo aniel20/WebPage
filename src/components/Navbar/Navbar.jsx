@@ -19,10 +19,11 @@ const Header = ({ toggleDarkMode }) => {
       </Link>
       <MenuList
         sx={{
+          marginTop: '2.5vh',
           padding: '0',
           display: 'flex',
           flexDirection: 'row',
-          gap: '20px',
+          gap: '5vh',
           bgcolor: 'background.default',
         }}
       >
@@ -32,7 +33,7 @@ const Header = ({ toggleDarkMode }) => {
             sx={{
               textDecoration: 'none',
               color: 'text.primary',
-              padding: '2.5vh',
+              padding: '0 0 2.5vh 0',
               '&:hover': {
                 color: '#2196F3',
               },
@@ -55,7 +56,7 @@ const Header = ({ toggleDarkMode }) => {
             sx={{
               textDecoration: 'none',
               color: 'text.primary',
-              padding: '2.5vh',
+              padding: '0 0 2vh 0',
               '&:hover': {
                 color: '#2196F3',
               },
@@ -78,7 +79,8 @@ const Header = ({ toggleDarkMode }) => {
             sx={{
               textDecoration: 'none',
               color: 'text.primary',
-              padding: '2.5vh',
+              padding: '0 0 2.5vh 0',
+
               '&:hover': {
                 color: '#2196F3',
               },
@@ -94,6 +96,7 @@ const Header = ({ toggleDarkMode }) => {
           >
             Contacts
           </Link>
+          <span sx={{}}></span>
         </MenuItem>
       </MenuList>
       <div>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import css from '../WhatWeDo/WhatWeDo.module.css';
-import { CardMedia, Container, MenuItem, MenuList } from '@mui/material';
+import { Box, Container, MenuItem, MenuList } from '@mui/material';
 
 export const WhatWeDo = () => {
   return (
@@ -20,7 +20,7 @@ export const WhatWeDo = () => {
       <h2>What we do</h2>
       <MenuList className={css.menuList}>
         <MenuItem className={css.photoBox} sx={{ padding: '0' }}>
-          <CardMedia
+          <Box
             className={css.firstImg}
             sx={{
               cursor: 'initial',
@@ -31,7 +31,7 @@ export const WhatWeDo = () => {
           <p className={css.label}>DESKTOP APPS</p>
         </MenuItem>
         <MenuItem className={css.photoBox} sx={{ padding: '0' }}>
-          <CardMedia
+          <Box
             className={css.secondImg}
             sx={{
               cursor: 'initial',
@@ -42,7 +42,7 @@ export const WhatWeDo = () => {
           <p className={css.label}>MOBILE APPS</p>
         </MenuItem>
         <MenuItem className={css.photoBox} sx={{ padding: '0' }}>
-          <CardMedia
+          <Box
             className={css.thirdImg}
             sx={{
               cursor: 'initial',
