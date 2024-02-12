@@ -5,12 +5,14 @@ import Header from './Navbar/Navbar';
 import { Hero } from './Hero/Hero';
 import { Features } from './Features/Features';
 import { WhatWeDo } from './WhatWeDo/WhatWeDo';
+import { OurTeam } from './OurTeam/OurTeam';
+import { Customers } from './Cusomers/Customers';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
-    setDarkMode(prevMode => !prevMode); // Toggle the current mode
+    setDarkMode(prevMode => !prevMode);
   };
 
   const theme = createTheme({
@@ -32,6 +34,8 @@ export default function App() {
       <Hero />
       <Features />
       <WhatWeDo />
+      <OurTeam />
+      <Customers />
     </ThemeProvider>
   );
 }

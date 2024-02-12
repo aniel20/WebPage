@@ -1,14 +1,20 @@
 import React from 'react';
 import css from './Navbar.module.css';
-import { Box, MenuItem, MenuList, Link } from '@mui/material';
+import { Box, MenuList, Link } from '@mui/material';
 import ThemeSwitch from '../ThemeSwich';
-
-const Header = ({ toggleDarkMode }) => {
+import { useTheme } from '@mui/material';
+export const Header = ({ toggleDarkMode }) => {
+  const theme = useTheme();
+  const borderShadow =
+    theme.palette.mode === 'light'
+      ? 'rgba(33,33,33,0.3)'
+      : 'rgba(255,255,255,0.3)';
   return (
     <Box
       sx={{
         bgcolor: 'background.default',
         color: 'text.primary',
+        borderBottom: `2px solid ${borderShadow}`,
       }}
       className={css.navbar}
     >
@@ -27,7 +33,7 @@ const Header = ({ toggleDarkMode }) => {
           bgcolor: 'background.default',
         }}
       >
-        <MenuItem sx={{ padding: '0px' }} className={css.menuItem}>
+        <li sx={{ padding: '0px' }} className={css.menuItem}>
           <Link
             to="/"
             sx={{
@@ -49,8 +55,8 @@ const Header = ({ toggleDarkMode }) => {
           >
             Studio
           </Link>
-        </MenuItem>
-        <MenuItem sx={{ padding: '0px' }} className={css.menuItem}>
+        </li>
+        <li sx={{ padding: '0px' }} className={css.menuItem}>
           <Link
             to="/"
             sx={{
@@ -72,8 +78,8 @@ const Header = ({ toggleDarkMode }) => {
           >
             Portofolio
           </Link>
-        </MenuItem>
-        <MenuItem sx={{ padding: '0px' }} className={css.menuItem}>
+        </li>
+        <li sx={{ padding: '0px' }} className={css.menuItem}>
           <Link
             to="/"
             sx={{
@@ -97,7 +103,7 @@ const Header = ({ toggleDarkMode }) => {
             Contacts
           </Link>
           <span sx={{}}></span>
-        </MenuItem>
+        </li>
       </MenuList>
       <div>
         <ThemeSwitch onToggle={toggleDarkMode} />
@@ -111,7 +117,7 @@ const Header = ({ toggleDarkMode }) => {
           color: 'text.primary',
         }}
       >
-        <MenuItem sx={{ padding: '0px' }} className={css.menuItem}>
+        <li sx={{ padding: '0px' }} className={css.menuItem}>
           <Link
             to="/"
             sx={{
@@ -125,8 +131,8 @@ const Header = ({ toggleDarkMode }) => {
           >
             info@devstudio.com
           </Link>
-        </MenuItem>
-        <MenuItem sx={{ padding: '0px' }} className={css.menuItem}>
+        </li>
+        <li sx={{ padding: '0px' }} className={css.menuItem}>
           <Link
             to="/"
             sx={{
@@ -140,7 +146,7 @@ const Header = ({ toggleDarkMode }) => {
           >
             +1 212-772-4150
           </Link>
-        </MenuItem>
+        </li>
       </MenuList>
     </Box>
   );

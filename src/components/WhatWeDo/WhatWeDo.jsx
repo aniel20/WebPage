@@ -24,8 +24,8 @@ export const WhatWeDo = () => {
             className={css.firstImg}
             sx={{
               cursor: 'initial',
-              width: '55vh',
-              height: '45vh',
+              width: '53vh',
+              height: '40vh',
             }}
           />
           <p className={css.label}>DESKTOP APPS</p>
@@ -35,8 +35,8 @@ export const WhatWeDo = () => {
             className={css.secondImg}
             sx={{
               cursor: 'initial',
-              width: '55vh',
-              height: '45vh',
+              width: '53vh',
+              height: '40vh',
             }}
           />
           <p className={css.label}>MOBILE APPS</p>
@@ -46,8 +46,8 @@ export const WhatWeDo = () => {
             className={css.thirdImg}
             sx={{
               cursor: 'initial',
-              width: '55vh',
-              height: '45vh',
+              width: '53vh',
+              height: '40vh',
             }}
           />
           <p className={css.label}>DESIGN SOLUTIONS</p>

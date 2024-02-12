@@ -1,7 +1,7 @@
 import * as React from 'react';
 import sprite from '../../images/sprite.svg';
 import css from '../Features/Features.module.css';
-import { Box, Container, MenuItem, MenuList } from '@mui/material';
+import { Box, Container, MenuList } from '@mui/material';
 import { useTheme } from '@mui/material';
 
 export const Features = () => {
@@ -34,7 +34,7 @@ export const Features = () => {
         }}
       >
         <MenuList className={css.menuList}>
-          <MenuItem
+          <li
             className={css.menuItem}
             sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
           >
@@ -50,8 +50,8 @@ export const Features = () => {
               We go into all the details and processes of your business to
               develop a customized solution..
             </p>
-          </MenuItem>
-          <MenuItem
+          </li>
+          <li
             className={css.menuItem}
             sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
           >
@@ -65,8 +65,8 @@ export const Features = () => {
               With us, you can feel safe and secure. An important principle of
               the company: respect your time and deadlines.
             </p>
-          </MenuItem>
-          <MenuItem
+          </li>
+          <li
             className={css.menuItem}
             sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
           >
@@ -80,8 +80,8 @@ export const Features = () => {
               You will be able to observe and participate in every phase of
               solution development and implementation.
             </p>
-          </MenuItem>
-          <MenuItem
+          </li>
+          <li
             className={css.menuItem}
             sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
           >
@@ -95,7 +95,7 @@ export const Features = () => {
               We use innovative tools to solve assigned tasks. It's time to
               simplify work processes.
             </p>
-          </MenuItem>
+          </li>
         </MenuList>
       </Box>
     </Container>

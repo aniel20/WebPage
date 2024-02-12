@@ -1,0 +1,20 @@
+.iconCard {
+  border: 1px solid;
+  width: 25vh;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: row;
+  gap: 4vh;
+}
+
+.icon {
+  width: 15vh;
+  height: 10vh;
+}

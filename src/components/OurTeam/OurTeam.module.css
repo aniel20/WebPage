@@ -1,0 +1,67 @@
+.firstImg {
+  background: url('../../images/member1.jpg') center / cover no-repeat;
+}
+
+.secondImg {
+  background: url('../../images/member2.jpg') center / cover no-repeat;
+}
+
+.thirdImg {
+  background: url('../../images/member3.jpg') center / cover no-repeat;
+}
+
+.fourthImg {
+  background: url('../../images/member4.jpg') center / cover no-repeat;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: row;
+  gap: 5.7vh;
+}
+
+.menuCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3vh;
+}
+
+.title {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.text {
+  margin: -2vh 0 0 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.mediaList {
+  display: flex;
+  flex-direction: row;
+  gap: 3vh;
+  margin: -2vh 0 3vh 0;
+}
+
+.mediaBtn {
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.mainTitle {
+  padding: 0;
+}
