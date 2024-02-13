@@ -13,13 +13,17 @@ export const OurTeam = () => {
     theme.palette.mode === 'light'
       ? '0px 3px 6px 3px rgba(33,33,33,0.3)'
       : '0px 3px 6px 3px rgba(255,255,255,0.3)';
+  const borderShadow =
+    theme.palette.mode === 'light'
+      ? '0px 2px 3px 0px rgba(33,33,33,0.3)'
+      : '0px 2px 3px 0px rgba(255,255,255,0.3)';
   return (
     <Container
       maxWidth="100%"
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        boxShadow: cardShadow,
+        boxShadow: borderShadow,
       }}
       disableGutters
     >
@@ -65,6 +69,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -76,6 +81,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -88,6 +94,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -100,6 +107,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -137,6 +145,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -148,6 +157,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -160,6 +170,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -172,6 +183,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -207,6 +219,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -218,6 +231,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -230,6 +244,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -242,6 +257,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -277,6 +293,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -288,6 +305,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -300,6 +318,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >
@@ -312,6 +331,7 @@ export const OurTeam = () => {
                 sx={{
                   '&:hover': {
                     bgcolor: '#2196F3',
+                    color: '#FFFFFF',
                   },
                 }}
               >

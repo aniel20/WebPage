@@ -25,7 +25,6 @@ export const Header = ({ toggleDarkMode }) => {
       </Link>
       <MenuList
         sx={{
-          marginTop: '2.5vh',
           padding: '0',
           display: 'flex',
           flexDirection: 'row',

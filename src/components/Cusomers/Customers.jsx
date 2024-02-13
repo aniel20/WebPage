@@ -4,16 +4,12 @@ import css from '../Cusomers/Customers.module.css';
 import { Box, Container, MenuItem, MenuList } from '@mui/material';
 
 export const Customers = () => {
-  /*   const cardIcon =
-    theme.palette.mode === 'light' ? '#card-icon2' : '#card-icon1';
+  const [hoveredIcon, setHoveredIcon] = React.useState('');
 
-  const clockIcon =
-    theme.palette.mode === 'light' ? '#clock-icon2' : '#clock-icon1';
+  const handleIconHover = iconName => {
+    setHoveredIcon(iconName);
+  };
 
-  const diagramIcon =
-    theme.palette.mode === 'light' ? '#diagram-icon2' : '#diagram-icon1';
-  const astronautIcon =
-    theme.palette.mode === 'light' ? '#astronaut-icon2' : '#astronaut-icon1'; */
   return (
     <Container maxWidth="100%" disableGutters>
       <Box
@@ -30,61 +26,157 @@ export const Customers = () => {
         <MenuList className={css.menuList}>
           <MenuItem
             className={css.menuItem}
-            sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
+            sx={{ padding: '0', alignItems: 'flex-start' }}
+            onMouseEnter={() => handleIconHover('icon-Union1')}
+            onMouseLeave={() => handleIconHover('')}
           >
-            <Box className={css.iconCard}>
+            <Box
+              className={css.iconCard}
+              sx={{
+                '&:hover': {
+                  color: '#2196F3',
+                },
+              }}
+            >
               <svg className={css.icon} aria-hidden="true">
-                <use href={sprite + '#icon-Union1'} />
+                <use
+                  href={
+                    sprite +
+                    (hoveredIcon === 'icon-Union1'
+                      ? '#icon-Union2'
+                      : '#icon-Union1')
+                  }
+                />
               </svg>
             </Box>
           </MenuItem>
           <MenuItem
             className={css.menuItem}
-            sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
+            sx={{ padding: '0', alignItems: 'flex-start' }}
+            onMouseEnter={() => handleIconHover('icon-Group1')}
+            onMouseLeave={() => handleIconHover('')}
           >
-            <Box className={css.iconCard}>
+            <Box
+              className={css.iconCard}
+              sx={{
+                '&:hover': {
+                  color: '#2196F3',
+                },
+              }}
+            >
               <svg className={css.icon} aria-hidden="true">
-                <use href={sprite + '#icon-Group1'} />
+                <use
+                  href={
+                    sprite +
+                    (hoveredIcon === 'icon-Group1'
+                      ? '#icon-Group2'
+                      : '#icon-Group1')
+                  }
+                />
               </svg>
             </Box>
           </MenuItem>
           <MenuItem
             className={css.menuItem}
-            sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
+            sx={{ padding: '0', alignItems: 'flex-start' }}
+            onMouseEnter={() => handleIconHover('icon-Group21')}
+            onMouseLeave={() => handleIconHover('')}
           >
-            <Box className={css.iconCard}>
+            <Box
+              className={css.iconCard}
+              sx={{
+                '&:hover': {
+                  color: '#2196F3',
+                },
+              }}
+            >
               <svg className={css.icon} aria-hidden="true">
-                <use href={sprite + '#icon-Group21'} />
+                <use
+                  href={
+                    sprite +
+                    (hoveredIcon === 'icon-Group21'
+                      ? '#icon-Group22'
+                      : '#icon-Group21')
+                  }
+                />
               </svg>
             </Box>
           </MenuItem>
           <MenuItem
             className={css.menuItem}
-            sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
+            sx={{ padding: '0', alignItems: 'flex-start' }}
+            onMouseEnter={() => handleIconHover('icon-Group31')}
+            onMouseLeave={() => handleIconHover('')}
           >
-            <Box className={css.iconCard}>
+            <Box
+              className={css.iconCard}
+              sx={{
+                '&:hover': {
+                  color: '#2196F3',
+                },
+              }}
+            >
               <svg className={css.icon} aria-hidden="true">
-                <use href={sprite + '#icon-Group31'} />
+                <use
+                  href={
+                    sprite +
+                    (hoveredIcon === 'icon-Group31'
+                      ? '#icon-Group32'
+                      : '#icon-Group31')
+                  }
+                />
               </svg>
             </Box>
           </MenuItem>
           <MenuItem
             className={css.menuItem}
-            sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
+            sx={{ padding: '0', alignItems: 'flex-start' }}
+            onMouseEnter={() => handleIconHover('icon-Group41')}
+            onMouseLeave={() => handleIconHover('')}
           >
-            <Box className={css.iconCard}>
+            <Box
+              className={css.iconCard}
+              sx={{
+                '&:hover': {
+                  color: '#2196F3',
+                },
+              }}
+            >
               <svg className={css.icon} aria-hidden="true">
-                <use href={sprite + '#icon-Group41'} />
+                <use
+                  href={
+                    sprite +
+                    (hoveredIcon === 'icon-Group41'
+                      ? '#icon-Group42'
+                      : '#icon-Group41')
+                  }
+                />
               </svg>
             </Box>
           </MenuItem>
           <MenuItem
             className={css.menuItem}
-            sx={{ cursor: 'initial', padding: '0', alignItems: 'flex-start' }}
+            sx={{ padding: '0', alignItems: 'flex-start' }}
+            onMouseEnter={() => handleIconHover('icon-Group51')}
+            onMouseLeave={() => handleIconHover('')}
           >
-            <Box className={css.iconCard}>
+            <Box
+              className={css.iconCard}
+              sx={{
+                '&:hover': {
+                  color: '#2196F3',
+                },
+              }}
+            >
               <svg className={css.icon} aria-hidden="true">
-                <use href={sprite + '#icon-Group51'} />
+                <use
+                  href={
+                    sprite +
+                    (hoveredIcon === 'icon-Group51'
+                      ? '#icon-Group52'
+                      : '#icon-Group51')
+                  }
+                />
               </svg>
             </Box>
           </MenuItem>
