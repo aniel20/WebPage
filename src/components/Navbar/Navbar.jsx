@@ -18,7 +18,14 @@ export const Header = ({ toggleDarkMode }) => {
       }}
       className={css.navbar}
     >
-      <Link sx={{ textDecoration: 'none', color: 'text.primary' }} to="/">
+      <Link
+        sx={{
+          textDecoration: 'none',
+          color: 'text.primary',
+          cursor: 'pointer',
+        }}
+        to="/"
+      >
         <h1 className={css.title}>
           <span className={css.titleBlue}>Web</span>Studio
         </h1>
@@ -38,17 +45,16 @@ export const Header = ({ toggleDarkMode }) => {
             sx={{
               textDecoration: 'none',
               color: 'text.primary',
-              padding: '0 0 2.5vh 0',
+              padding: '0 0 3.5vh 0',
+              cursor: 'pointer',
               '&:hover': {
                 color: '#2196F3',
               },
               '&:focus-visible': {
                 borderBottom: '5px solid #2196F3',
-                borderRadius: '3px',
               },
               '&:active': {
                 borderBottom: '5px solid #2196F3',
-                borderRadius: '3px',
               },
             }}
           >
@@ -61,17 +67,16 @@ export const Header = ({ toggleDarkMode }) => {
             sx={{
               textDecoration: 'none',
               color: 'text.primary',
-              padding: '0 0 2vh 0',
+              padding: '0 0 3.5vh 0',
+              cursor: 'pointer',
               '&:hover': {
                 color: '#2196F3',
               },
               '&:focus-visible': {
                 borderBottom: '5px solid #2196F3',
-                borderRadius: '3px',
               },
               '&:active': {
                 borderBottom: '5px solid #2196F3',
-                borderRadius: '3px',
               },
             }}
           >
@@ -84,18 +89,16 @@ export const Header = ({ toggleDarkMode }) => {
             sx={{
               textDecoration: 'none',
               color: 'text.primary',
-              padding: '0 0 2.5vh 0',
-
+              padding: '0 0 3.5vh 0',
+              cursor: 'pointer',
               '&:hover': {
                 color: '#2196F3',
               },
               '&:focus-visible': {
                 borderBottom: '5px solid #2196F3',
-                borderRadius: '3px',
               },
               '&:active': {
                 borderBottom: '5px solid #2196F3',
-                borderRadius: '3px',
               },
             }}
           >
@@ -123,6 +126,7 @@ export const Header = ({ toggleDarkMode }) => {
               textDecoration: 'none',
               color: 'text.primary',
               padding: '0',
+              cursor: 'pointer',
               '&:hover': {
                 color: '#2196F3',
               },
@@ -138,6 +142,7 @@ export const Header = ({ toggleDarkMode }) => {
               padding: '0',
               textDecoration: 'none',
               color: 'text.primary',
+              cursor: 'pointer',
               '&:hover': {
                 color: '#2196F3',
               },

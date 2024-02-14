@@ -2,6 +2,7 @@ import * as React from 'react';
 import sprite from '../../images/sprite.svg';
 import css from '../Cusomers/Customers.module.css';
 import { Box, Container, MenuItem, MenuList } from '@mui/material';
+import { useTheme } from '@mui/material';
 
 export const Customers = () => {
   const [hoveredIcon, setHoveredIcon] = React.useState('');
@@ -9,13 +10,21 @@ export const Customers = () => {
   const handleIconHover = iconName => {
     setHoveredIcon(iconName);
   };
-
+  const theme = useTheme();
+  const borderShadow =
+    theme.palette.mode === 'light'
+      ? 'rgba(33,33,33,0.3)'
+      : 'rgba(255,255,255,0.3)';
   return (
-    <Container maxWidth="100%" disableGutters>
+    <Container
+      maxWidth="100%"
+      disableGutters
+      sx={{ borderBottom: `2px solid ${borderShadow}` }}
+    >
       <Box
         padding="0"
         sx={{
-          height: '50vh',
+          height: '55vh',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',

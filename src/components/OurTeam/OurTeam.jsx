@@ -13,17 +13,17 @@ export const OurTeam = () => {
     theme.palette.mode === 'light'
       ? '0px 3px 6px 3px rgba(33,33,33,0.3)'
       : '0px 3px 6px 3px rgba(255,255,255,0.3)';
-  const borderShadow =
+  /*   const borderShadow =
     theme.palette.mode === 'light'
       ? '0px 2px 3px 0px rgba(33,33,33,0.3)'
-      : '0px 2px 3px 0px rgba(255,255,255,0.3)';
+      : '0px 2px 3px 0px rgba(255,255,255,0.3)'; */
   return (
     <Container
       maxWidth="100%"
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        boxShadow: borderShadow,
+        /* boxShadow: borderShadow, */
       }}
       disableGutters
     >
@@ -35,6 +35,7 @@ export const OurTeam = () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
+          bgcolor: theme.palette.mode === 'light' ? '#F5F4FA' : '#121212',
         }}
       >
         <h1 className="css.mainTitle">Our Team</h1>

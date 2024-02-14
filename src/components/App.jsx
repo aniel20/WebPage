@@ -7,6 +7,7 @@ import { Features } from './Features/Features';
 import { WhatWeDo } from './WhatWeDo/WhatWeDo';
 import { OurTeam } from './OurTeam/OurTeam';
 import { Customers } from './Cusomers/Customers';
+import { Footer } from './Footer/Footer';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -36,6 +37,7 @@ export default function App() {
       <WhatWeDo />
       <OurTeam />
       <Customers />
+      <Footer />
     </ThemeProvider>
   );
 }
